@@ -71,6 +71,14 @@ def start_terminal_interface(interpreter):
             "type": bool,
             "attribute": {"object": interpreter, "attr_name": "verbose"},
         },
+        # Doctor (diagnostics tool to determine whether open interpreter can run on this system) 
+        {
+            "name": "doctor",
+            "nickname": "doc",
+            "help_text": "diagnose whether open interpreter can run on this system",
+            "type": bool,
+            "attribute": {"object": interpreter, "attr_name": "doctor"},
+        },
         {
             "name": "model",
             "nickname": "m",
