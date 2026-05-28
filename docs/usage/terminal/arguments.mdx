@@ -20,7 +20,7 @@ title: Arguments
 
 **[Other](/docs/usage/terminal/arguments#other)**
 
-`--version`, `--help`.
+`--version`, `--help`, `--doctor`.
 
 ---
 
@@ -435,6 +435,19 @@ Display all available terminal arguments.
 <CodeGroup>
 ```bash Terminal
 interpreter --help
+```
+
+</CodeGroup>
+
+#### `--doctor`
+
+Verifies system configuration, packages, AI models and API keys, environmental variables, shell execution, Ollama availability and CUDA/GPU support.
+
+The diagnostic report is printed directly to the terminal and the process exits after completion.
+
+<CodeGroup>
+```bash Terminal
+interpreter --doctor
 ```
 
 </CodeGroup>
